@@ -1,6 +1,6 @@
 const { knuthShuffle } = require('knuth-shuffle');
 
-module.exports = a => {
+exports.shuffleArray = a => {
     const dup = a.concat([]);
     knuthShuffle(dup);
     return dup;
