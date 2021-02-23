@@ -9,6 +9,7 @@ const mockRolls = require('./src/test/mockRolls');
 const mockRollsAsync = require('./src/test/mockRollsAsync');
 const mockShuffle = require('./src/test/mockShuffle');
 const mockShuffleAsync = require('./src/test/mockShuffleAsync');
+const isRandom = require('./src/isRandom');
 
 exports.randomDice = randomDice.randomDice;
 exports.randomMinMaxFloat = randomMinMaxFloat.randomMinMaxFloat;
@@ -22,3 +23,5 @@ exports.mockShuffle = mockShuffle;
 exports.mockShuffleAsync = mockShuffleAsync;
 exports.mockRolls = mockRolls;
 exports.mockRollsAsync = mockRollsAsync;
+
+exports.isRandom = isRandom;
