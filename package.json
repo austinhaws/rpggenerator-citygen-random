@@ -1,6 +1,6 @@
 {
   "name": "@austinhaws/rpggenerator-citygen-random",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Randomizing utilities for city generation",
   "main": "index.js",
   "scripts": {
