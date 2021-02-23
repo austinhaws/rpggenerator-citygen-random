@@ -5,10 +5,8 @@ const randomRatio = require('./src/randomRatio');
 const shuffleArray = require('./src/shuffleArray');
 const randomPercentile = require('./src/randomPercentile');
 const createTestRoll = require('./src/test/createTestRoll');
-const mockRolls = require('./src/test/mockRolls');
-const mockRollsAsync = require('./src/test/mockRollsAsync');
-const mockShuffle = require('./src/test/mockShuffle');
-const mockShuffleAsync = require('./src/test/mockShuffleAsync');
+const { mockRolls, mockRollsAsync } = require('./src/test/mockRolls');
+const { mockShuffle, mockShuffleAsync } = require('./src/test/mockShuffle');
 const isRandom = require('./src/isRandom');
 
 exports.randomDice = randomDice.randomDice;
