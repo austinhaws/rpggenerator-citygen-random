@@ -7,7 +7,7 @@ const randomPercentile = require('./src/randomPercentile');
 const createTestRoll = require('./src/test/createTestRoll');
 const { mockRolls, mockRollsAsync } = require('./src/test/mockRolls');
 const { mockShuffle, mockShuffleAsync } = require('./src/test/mockShuffle');
-const isRandom = require('./src/isRandom');
+const { isRandom } = require('./src/isRandom');
 
 exports.randomDice = randomDice.randomDice;
 exports.randomMinMaxFloat = randomMinMaxFloat.randomMinMaxFloat;
