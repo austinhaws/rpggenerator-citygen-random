@@ -1,6 +1,6 @@
 const isRandom = require("../src/isRandom");
 
-test('isRandom - true', () => {
+test('isRandom', () => {
     expect(isRandom.isRandom('')).toBe(true);
     expect(isRandom.isRandom('Random')).toBe(true);
     expect(isRandom.isRandom('RANDOM')).toBe(true);
@@ -13,4 +13,5 @@ test('isRandom - true', () => {
     expect(isRandom.isRandom('test')).toBe(false);
     expect(isRandom.isRandom(' ')).toBe(false);
     expect(isRandom.isRandom(' random ')).toBe(false);
+    expect(isRandom.isRandom(true)).toBe(false);
 });
