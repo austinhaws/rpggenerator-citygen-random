@@ -7,7 +7,7 @@ const formatErrorRolls = (useRoll, rollName, sides, useSides) => (
 
 const doRandom = (mockUseRolls, usesSides) => (({ rollName, sides }) => {
     if (!mockUseRolls.length) {
-        throw new Error(`Out of rolls for: ${formatErrorRolls(null, rollName, sides, usesSides)}`);
+        throw new Error(`Out of rolls, ${formatErrorRolls(null, rollName, sides, usesSides)}`);
     }
     const useRoll = mockUseRolls.shift();
     if (0 !== useRoll.rollName.localeCompare(rollName)) {

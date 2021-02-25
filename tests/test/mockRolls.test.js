@@ -16,6 +16,20 @@ test('mockRolls - not all rolls used', () => {
     console.error = consoleError;
 });
 
+test('mockRolls - out of rolls', () => {
+    const consoleError = console.error;
+    console.error = () => { };
+    expect(() => mockRolls([
+    ], () => {
+        expect(randomDice.randomDice({
+            rollName: 'a',
+            sides: 6,
+        })).toBe(3);
+        // out of rolls
+    })).toThrowError(/Out of rolls/);
+    console.error = consoleError;
+});
+
 test('mockRolls - randomDice', () => {
     mockRolls([
         createTestRoll({ rollName: 'a', sides: 6, roll: 3 })
