@@ -9,6 +9,8 @@ const createTestRoll = require('./src/test/createTestRoll');
 const { mockRolls, mockRollsAsync } = require('./src/test/mockRolls');
 const { mockShuffle, mockShuffleAsync } = require('./src/test/mockShuffle');
 const { isRandom } = require('./src/isRandom');
+const randomMinMaxSlopedFloat = require('./src/randomMinMaxSlopedFloat');
+const randomMinMaxSlopedInt = require('./src/randomMinMaxSlopedInt');
 
 // these get mocked so have to run from object to make sure to use the mocked function
 // uses anonymous function to make it easy to use
@@ -18,6 +20,8 @@ exports.randomRatio = ({ ...params } = {}) => randomRatio.randomRatio(params);
 // functions for doing random
 exports.randomMinMaxFloat = randomMinMaxFloat.randomMinMaxFloat;
 exports.randomMinMaxInt = randomMinMaxInt.randomMinMaxInt;
+exports.randomMinMaxSlopedFloat = randomMinMaxSlopedFloat.randomMinMaxSlopedFloat;
+exports.randomMinMaxSlopedInt = randomMinMaxSlopedInt.randomMinMaxSlopedInt;
 exports.randomPercentile = randomPercentile.randomPercentile;
 exports.randomStep = randomStep.randomStep;
 exports.shuffleArray = a => shuffleArray.shuffleArray(a);
