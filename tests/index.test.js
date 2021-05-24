@@ -1,9 +1,8 @@
 const moduleExports = require('../index.js');
-const { randomDice, randomRatio } = require('../index.js');
+const { randomDice, randomRatio, shuffleArray } = require('../index.js');
 const { randomMinMaxFloat } = require('../src/randomMinMaxFloat');
 const { randomMinMaxInt } = require('../src/randomMinMaxInt');
 const { randomStep } = require('../src/randomStep');
-const { shuffleArray } = require('../src/shuffleArray');
 const { randomPercentile } = require('../src/randomPercentile');
 const createTestRoll = require('../src/test/createTestRoll');
 const { mockRolls, mockRollsAsync } = require('../src/test/mockRolls');
