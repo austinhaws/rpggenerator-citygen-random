@@ -10,6 +10,7 @@ const createTestRoll = require('../src/test/createTestRoll');
 const { mockRolls, mockRollsAsync } = require('../src/test/mockRolls');
 const { mockShuffle, mockShuffleAsync } = require('../src/test/mockShuffle');
 const { isRandom } = require('../src/isRandom');
+const { isCustom } = require('../src/isCustom');
 
 test('exports', () => {
     const knownExports = {
@@ -30,6 +31,7 @@ test('exports', () => {
         mockShuffle,
         mockShuffleAsync,
         isRandom,
+        isCustom,
     };
 
     expect(Object.keys(moduleExports)).toStrictEqual(Object.keys(knownExports));

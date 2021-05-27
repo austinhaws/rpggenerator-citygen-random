@@ -9,6 +9,7 @@ const createTestRoll = require('./src/test/createTestRoll');
 const { mockRolls, mockRollsAsync } = require('./src/test/mockRolls');
 const { mockShuffle, mockShuffleAsync } = require('./src/test/mockShuffle');
 const { isRandom } = require('./src/isRandom');
+const { isCustom } = require('./src/isCustom');
 const randomMinMaxSlopedFloat = require('./src/randomMinMaxSlopedFloat');
 const randomMinMaxSlopedInt = require('./src/randomMinMaxSlopedInt');
 
@@ -35,3 +36,4 @@ exports.mockShuffleAsync = mockShuffleAsync;
 
 // utility functions dealing with randomness
 exports.isRandom = isRandom;
+exports.isCustom = isCustom;
