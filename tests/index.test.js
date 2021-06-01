@@ -1,5 +1,6 @@
 const moduleExports = require('../index.js');
 const { randomDice, randomRatio, shuffleArray } = require('../index.js');
+const { randomArrayEntry } = require('../src/randomArrayEntry');
 const { randomMinMaxFloat } = require('../src/randomMinMaxFloat');
 const { randomMinMaxInt } = require('../src/randomMinMaxInt');
 const { randomMinMaxSlopedFloat } = require('../src/randomMinMaxSlopedFloat');
@@ -18,6 +19,7 @@ test('exports', () => {
         randomDice,
         randomRatio,
 
+        randomArrayEntry,
         randomMinMaxFloat,
         randomMinMaxInt,
         randomMinMaxSlopedFloat,

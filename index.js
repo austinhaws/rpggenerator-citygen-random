@@ -1,4 +1,5 @@
 const randomDice = require('./src/randomDice');
+const randomArrayEntry = require('./src/randomArrayEntry');
 const randomMinMaxFloat = require('./src/randomMinMaxFloat');
 const randomMinMaxInt = require('./src/randomMinMaxInt');
 const randomRatio = require('./src/randomRatio');
@@ -20,6 +21,7 @@ exports.randomDice = ({ ...params } = {}) => randomDice.randomDice(params);
 exports.randomRatio = ({ ...params } = {}) => randomRatio.randomRatio(params);
 
 // functions for doing random
+exports.randomArrayEntry = randomArrayEntry.randomArrayEntry;
 exports.randomMinMaxFloat = randomMinMaxFloat.randomMinMaxFloat;
 exports.randomMinMaxInt = randomMinMaxInt.randomMinMaxInt;
 exports.randomMinMaxSlopedFloat = randomMinMaxSlopedFloat.randomMinMaxSlopedFloat;
