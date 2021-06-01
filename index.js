@@ -3,6 +3,7 @@ const randomMinMaxFloat = require('./src/randomMinMaxFloat');
 const randomMinMaxInt = require('./src/randomMinMaxInt');
 const randomRatio = require('./src/randomRatio');
 const randomStep = require('./src/randomStep');
+const randomTableStepEntry = require('./src/randomTableStepEntry');
 const shuffleArray = require('./src/shuffleArray');
 const randomPercentile = require('./src/randomPercentile');
 const createTestRoll = require('./src/test/createTestRoll');
@@ -25,6 +26,7 @@ exports.randomMinMaxSlopedFloat = randomMinMaxSlopedFloat.randomMinMaxSlopedFloa
 exports.randomMinMaxSlopedInt = randomMinMaxSlopedInt.randomMinMaxSlopedInt;
 exports.randomPercentile = randomPercentile.randomPercentile;
 exports.randomStep = randomStep.randomStep;
+exports.randomTableStepEntry = randomTableStepEntry.randomTableStepEntry;
 exports.shuffleArray = a => shuffleArray.shuffleArray(a);
 
 // functions for mocking randomness
